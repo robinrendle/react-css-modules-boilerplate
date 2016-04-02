@@ -1,0 +1,5 @@
+.thing {
+    composes: red from './colors.scss';
+    font-size: 20px;
+    padding: 20px;
+}
