@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
 module.exports = {
     entry: {
         'main': './src',
@@ -7,7 +8,6 @@ module.exports = {
     output: {
         path: 'build',
         filename: 'bundle.js',
-        libraryTarget: 'umd' // this is super important
     },
     module: {
         loaders: [
