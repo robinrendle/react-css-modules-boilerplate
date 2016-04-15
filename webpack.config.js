@@ -1,11 +1,11 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-    entry:  './src',
+    entry: './src',
     output: {
         path: 'build',
         filename: 'bundle.js',
+        libraryTarget: 'umd' // this is super important
     },
     module: {
         loaders: [
@@ -23,10 +23,5 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("styles.css"),
-        new BrowserSyncPlugin({
-            host: 'localhost',
-            port: 3000,
-            server: { baseDir: ['./']}
-        })
     ]
 };
