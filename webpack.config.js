@@ -1,5 +1,6 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+var data = require('./data.js');
 
 module.exports = {
     entry: {
@@ -8,6 +9,7 @@ module.exports = {
     output: {
         path: 'build',
         filename: 'bundle.js',
+        libraryTarget: 'umd' // this is super important
     },
     module: {
         loaders: [
@@ -25,5 +27,6 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("styles.css"),
+        new StaticSiteGeneratorPlugin('main', data.routes, data)
     ]
 };
