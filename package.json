@@ -19,6 +19,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
+    "react-router": "^2.4.0",
     "static-site-generator-webpack-plugin": "^2.0.1",
     "webpack": "^1.12.14"
   },

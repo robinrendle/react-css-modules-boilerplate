@@ -1,19 +1,15 @@
 import React from 'react'
-import Head from './Head'
+import Head from '../components/Head'
 
-class Main extends React.Component {
+export default class Main extends React.Component {
   render() {
     return (
       <html>
         <Head title='React and CSS Modules'/>
         <body>
-            <header>
-                <h1>React demo</h1>
-            </header>
+            {this.props.children}
         </body>
       </html>
     )
   }
 }
-
-export default Main

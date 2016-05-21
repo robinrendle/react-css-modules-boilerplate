@@ -1,15 +1,15 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
-var data = require('./data.js');
+var ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin'),
+    data = require('./data.js'),
+    path = require('path');
 
 module.exports = {
-    entry: {
-        'main': './src',
-    },
+    entry: './src/router',
     output: {
-        path: 'build',
+        path: './build',
         filename: 'bundle.js',
-        libraryTarget: 'umd' // this is super important
+        libraryTarget: 'umd',
+        publicPath: '/'
     },
     module: {
         loaders: [
