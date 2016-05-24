@@ -44,7 +44,7 @@ export default class CoolButton extends React.Component {
 }
 ```
 
-And then we import that React component into one of the templates in `src/templates`: 
+And then we import that React component into one of the templates, such as `src/templates/Home.js`: 
 
 ```
 import React from 'react'
