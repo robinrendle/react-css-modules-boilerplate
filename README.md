@@ -1,6 +1,6 @@
 # Static React and CSS Modules
 
-A React and CSS Modules project that generates static markup for tiny websites. All markup is generated in `/build` from `/src`. If you’re interested in learning more about the inner workings of this project you can check out the tutorial on CSS-Tricks:
+A React, Webpack and CSS Modules project that generates static markup. All markup is generated in `/build` from `/src`. If you’re interested in learning more about the inner workings of this project you can check out the tutorial on CSS-Tricks:
 
 📕 [CSS Modules and React](https://css-tricks.com/css-modules-part-3-react/) 📕
 
@@ -29,7 +29,7 @@ React is used in this project not to build a complex web app but instead to orga
       style.css
 ```
 
-So in `Button.js` we create a standard React component and we import its styles in order for Webpack to generate custom classnames: 
+So in `Button.js` we create a standard React component and we import its styles so that Webpack can generate custom classnames: 
 
 ```
 import React from 'react'
