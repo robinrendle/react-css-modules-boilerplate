@@ -65,6 +65,10 @@ export default class Home extends React.Component {
 
 This way we get to generate custom classnames like CSS Modules but we also get some of the templating benefits of React.
 
+## Improvements
+
+Since this is a concept for how you might want to organise your markup and CSS, this project contains as few dependencies as possible. I haven’t added Sass or PostCSS loaders into the Webpack config, and this project doesn’t support image files either. 
+
 ## Issues
 
 This is really just a proof of concept, but if you feel like there’s anything I’ve missed then don’t hesitate to open an issue. 
