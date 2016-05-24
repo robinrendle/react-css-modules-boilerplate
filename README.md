@@ -48,7 +48,6 @@ And then we import that React component into one of the templates in `src/templa
 
 ```
 import React from 'react'
-import Head from '../components/Head'
 import CoolButton from '../components/Button/Button'
 
 export default class Home extends React.Component {
