@@ -67,4 +67,4 @@ This way we get to generate custom classnames like CSS Modules but we also get s
 
 ## Issues
 
-This is really just a proof of concept, but if you feel like there’s anything I’ve missed don’t hesitate to make an issue. 
+This is really just a proof of concept, but if you feel like there’s anything I’ve missed then don’t hesitate to open an issue. 
