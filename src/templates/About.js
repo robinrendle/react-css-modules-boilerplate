@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from '../components/Head'
 
 export default class About extends React.Component {
   render() {
